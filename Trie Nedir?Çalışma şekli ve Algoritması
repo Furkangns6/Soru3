@@ -1,0 +1,20 @@
+Trie (Metin Ağacı) Nedir?
+Trie (veya önek ağacı), genellikle bir dizi diziyi saklamak için kullanılan ağaç benzeri bir veri yapısıdır.
+Trie, "retrieval" (alma) kelimesinden türetilmiştir ve genellikle hızlı arama işlemleri için kullanılır.
+Her düğüm bir karakteri temsil eder ve kökten yaprağa giden yol, bir diziyi temsil eder.
+
+Çalışma Şekli
+  1)Ekleme: Bir diziyi eklerken, dizinin karakterlerini teker teker alırız ve Trie'de bu karakterleri temsil eden yolu takip ederiz. Eğer yol yoksa, gerekli düğümleri ekleriz.
+  2)Arama: Bir diziyi ararken, dizinin karakterlerini teker teker alırız ve Trie'de bu karakterleri temsil eden yolu takip ederiz. Eğer yol boyunca tüm karakterleri bulabilirsek, dizi Trie'de mevcut demektir.
+  3)Silme: Bir diziyi silmek, dizinin son karakterine ulaşana kadar yolu takip etmeyi ve ardından gerekirse düğümleri kaldırmayı içerir.
+Algoritma
+  Ekleme
+    1)Trie'yi kök düğümden başlatın.
+    2)Her karakter için, mevcut düğümdeki karaktere karşılık gelen alt düğümü kontrol edin.
+    3)Eğer alt düğüm yoksa, yeni bir düğüm oluşturun.
+    4)Son karaktere ulaştığınızda, bu düğümü son düğüm olarak işaretleyin.
+  Arama
+    1)Trie'yi kök düğümden başlatın.
+    2)Her karakter için, mevcut düğümdeki karaktere karşılık gelen alt düğümü kontrol edin.
+    3)Eğer herhangi bir karakter için alt düğüm yoksa, dizi Trie'de mevcut değildir.
+    4)Son karaktere ulaştığınızda, eğer bu düğüm son düğüm olarak işaretlenmişse, dizi Trie'de mevcuttur.
